@@ -1,6 +1,7 @@
-# Meteor Buildpack Horse
+# Meteor Buildpack Pony
 
-[![Horse](https://i.imgur.com/YhIL9zM.jpg)](https://commons.wikimedia.org/wiki/File:Draw-Costa_Rican-2smallest.jpg)
+![Pony](https://i.imgur.com/hW0bThIt.jpg)
+
 
 A heroku buildpack for Meteor v1+, designed to be as simple and readable as possible.
 
@@ -12,7 +13,7 @@ To use this with your meteor app and heroku:
         heroku buildpacks:set https://github.com/AdmitHub/meteor-buildpack-horse.git
 
 3. Add the MongoLab addon:
-        
+
         heroku addons:create mongolab
 
 4. Set the `ROOT_URL` environment variable. This is required for bundling and running the app.  Either define it explicitly, or enable the [Dyno Metadata](https://devcenter.heroku.com/articles/dyno-metadata) labs addon to default to `https://<appname>.herokuapp.com`.
@@ -39,7 +40,7 @@ The following are some important environment variables for bundling and running 
 
 The basic buildpack should function correctly for any normal-ish meteor app,
 with or without npm-container.  For extra steps needed for your particular build,
-just add shell scripts to the `extra` folder and they will get sourced into the 
+just add shell scripts to the `extra` folder and they will get sourced into the
 build.
 
 Extras included in this branch:
@@ -72,4 +73,3 @@ So this one is the horse one.
 README image credit: wikicommons contributor [Arsdelicata](https://commons.wikimedia.org/wiki/User:Arsdelicata)
 
 <a href="https://zenhub.com"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png"></a>
-
